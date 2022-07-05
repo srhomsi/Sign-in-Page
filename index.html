@@ -8,18 +8,18 @@
 
 
 <body>
-  <div class="form">
+  <div class="column1">
     <h1>Welcome back</h1>
     <p> Welcome back! Please enter your details.</a> </p>
 
 
     <div class="fields">
 
-      <label>Email</label>
+      <div class="left-container">Email</div>
 
     <div class="field"><input type="text" id="email" name="email" placeholder="Enter your email"></div>
 
-    <label>Password</label>
+    <div class="left-container">Password</div>
 
     <div class="field"><input type="password" id="password" name="password" placeholder="Enter your password"></div>
 
@@ -30,16 +30,22 @@
 
 
     <div class="textbox">
-      <div class="column1"><input type="checkbox"><p>Remember for 30 days</p></div>
-      <div align="left" class="column2"><p><a>Forgot password</a></p></div>
+      <div class="left-container"><input type="checkbox">Remember for 30 days</div>
+      <a>Forgot password</a>
     </div>
 
     <br><br>
 
-    <input type="submit" onclick="alert('Account Created!')" value="Create account">
+    <input type="submit" onclick="alert('Signing In...')" value="Sign in">
 
+    <input type="submit" id="google" onclick="alert('Signing in with Google...')" value="Sign in with Google">
+
+
+    <div class="center-container"><p>Don't have an account? <a>Sign up</a></p></div>
 
 </div>
+
+<div class="column2"> Image</div>
 
 
 
