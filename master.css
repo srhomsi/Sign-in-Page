@@ -1,21 +1,22 @@
 h1{
-  font-size: 21px;
-  font-weight: 400;
+  font-size: 24px;
+  font-weight: normal;
   letter-spacing: 0;
   line-height: 29px;
+  color: #111828;
 }
 
 p{
-  font-size: 10px;
-  font-weight: 200;
-  color: #606060;
-  letter-spacing: 0px;
+  font-size: 12px;
+  font-weight: normal;
+  color: #79818C;
+  letter-spacing: .02rem;
   line-height: 0px;
 }
 
 body{
-  font-family: Verdana;
-  font-size: 11px;
+  font-family: Helvetica;
+  font-size: 14px;
   margin: 0;
   padding: 0;
   letter-spacing: 0px;
@@ -23,28 +24,35 @@ body{
 
 a {
   text-decoration: none;
-  color: #554FF7;
+  color: #7E56DA;
 }
 
-.column1{
+.left-container{
   display: flex;
-  vertical-align: middle;
+  font-weight: normal;
+  margin-bottom: 4px;
+  font-size: 12px;
+  color: #3A404C;
 }
-
+.center-container{
+  margin: auto;
+  text-align: center;
+}
 
 
 .textbox{
+  font-weight: normal;
+  font-size: 12px;
   display: flex;
   justify-content: space-between;
-  vertical-align: middle;
   width: 100%;
   padding: 0;
   margin: 0;
 }
 
-.form{
+.column1{
   background-color: #ffffff;
-  width: 300px;
+  width: 340px;
   padding: 48px 60px 36px 60px;
   margin: 100px auto;
   border: none;
@@ -53,29 +61,22 @@ a {
 
 .field{
   width: 100%;
-  margin: 16px 0;
+  margin: 0 0 16px 0;
 }
 
 .fields{
   width: 100%;
   padding: 0;
-  margin: 30px 0 0 0;
+  margin: 36px 0 0 0;
 }
 
 
-
-}
-
-label{
-  margin: 0;
-  padding: 0;
-  letter-spacing: 0px;
-}
 
 input[type=text]{
   box-sizing: border-box;
+  box-shadow: 0px 0px 2px #e5e5e5;
   width: 100%;
-  padding: 16px 12px;
+  padding: 10px 12px;
   margin: 0;
   border-radius: 4px;
   border: 1px solid #9b9b9b;
@@ -94,9 +95,10 @@ input[type=password]:focus{
 }
 
 input[type=password]{
+  box-shadow: 0px 0px 2px #e5e5e5;
   box-sizing: border-box;
   width: 100%;
-  padding: 16px 12px;
+  padding: 10px 12px;
   margin: 0;
   border-radius: 4px;
   border: 1px solid #9b9b9b;
@@ -116,19 +118,36 @@ input[type=checkbox]{
 }
 
 input[type=submit]{
-  font-family: Verdana;
-  box-shadow: 0px 10px 20px #CCCCFF;
+  font-family: Helvetica;
+  font-weight: 300;
+  box-shadow: none;
   font-size: 14px;
-  letter-spacing: 1px;
-  background-color: #554FF7;
+  letter-spacing: 0.07rem;
+  background-color: #7E56DA;
   color: white;
   width: 100%;
-  padding: 20px;
-  margin-top: 12px;
-  margin-bottom: 20px;
-  border-radius: 4px;
+  padding: 12px;
+  margin-top: 0px;
+  border-radius: 8px;
   border: none;
 }
+
+input[id="google"]{
+  font-family: Helvetica;
+  font-weight: normal;
+  box-shadow: none;
+  font-size: 14px;
+  letter-spacing: 0.07rem;
+  background-color: white;
+  color: #3A404C;
+  width: 100%;
+  padding: 12px;
+  margin-top: 12px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: solid 1px #9b9b9b;
+}
+
 
 input[type=submit]:hover{
   background-color: #6660F7;
