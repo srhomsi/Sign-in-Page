@@ -53,30 +53,28 @@ a {
 
 .columns{
   display: flex;
-
+  justify-content: space-between;
 }
 
 
 .column1{
+  width:360px;
+  min-width: 280px;
   background-color: #ffffff;
-  width: auto;
-  min-width: 260px;
-  padding: 48px 60px 36px 60px;
-  margin: 100px auto;
-  border: none;
-
+  padding: 36px 36px 36px 36px;
+  margin: auto;
+  border: 1px red solid;
 }
 
+
+
 img{
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: fill;
+object-fit: fill;
+min-width: 280px;
 }
 
 .column2{
-  object-fit: fill;
   background-color: #ffffff;
-  width: auto;
   margin: 0;
   padding: 0;
   border: solid 1px blue;
