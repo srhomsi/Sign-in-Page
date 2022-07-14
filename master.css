@@ -57,27 +57,33 @@ a {
 }
 
 
-.column1{
+.column{
+  height: 600px;
   width:360px;
   min-width: 280px;
   background-color: #ffffff;
-  padding: 36px 36px 36px 36px;
+  padding: 0;
   margin: auto;
   border: 1px red solid;
+
 }
 
+@media screen and (max-width: 700px) {
+  .columns {
+    flex-direction: column;
+  }
+  .column1{
+    height: 460px;
+  }
 
+  }
+}
 
 img{
-object-fit: fill;
-min-width: 280px;
+width: 20%;
 }
 
-.column2{
-  background-color: #ffffff;
-  margin: 0;
-  padding: 0;
-  border: solid 1px blue;
+
 
 }
 
