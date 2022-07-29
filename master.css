@@ -15,6 +15,7 @@ p{
 }
 
 body{
+  height: 1000px;
   font-family: Helvetica;
   font-size: 14px;
   margin: 0;
@@ -56,6 +57,8 @@ a {
 
 
 .columns{
+  height: 100%;
+  width: 100%;
   display: flex;
   vertical-align: top;
   justify-content: space-around;
@@ -66,33 +69,43 @@ img{
 }
 
 .column1{
-  width:360px;
-  min-width: 280px;
-  background-color: #ffffff;
-  padding: 20px 60px;
+  width: 100%;
   margin: auto;
-  border: 1px solid blue;
 
 }
 
 .column2{
-  overflow: auto;
-  width: 800px;
-  background-color: #ffffff;
+  overflow: none;
+  height: 100%;
+  width: 100%;
   padding: 0px;
   margin: auto;
-  border: 1PX SOLID RED;
+  background-image: url("images/background-image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 
 }
 
-@media screen and (max-width: 700px) {
+.ff{
+  width: 300px;
+  min-width: 280px;
+  margin: auto;
+}
+
+@media screen and (max-width: 760px) {
   .columns {
     flex-direction: column;
   }
   .column1{
+    padding: 60px 0;
+    min-width: 280px;
     height: 460px;
   }
-
+  .column2{
+  }
+  .ff{
+    min-width: 260px;
+    margin: auto;
   }
 }
 
